@@ -34,7 +34,7 @@ $(document).ready(function(){
 			userObject.answers.push(info[i].value);
 		};
 		$.post(currentURL + '/api/friends', userObject, function(data){
-			$('.modal-body').append(data.name).append('/n').append(data.matchDiff);
+			$('.modal-body').append(data.name).append('</n>').append(data.matchDiff);
 			$("#yourMatch").modal('toggle');
 		})
 
